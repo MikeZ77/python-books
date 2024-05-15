@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fluent-python"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "fluent_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mypy = "^1.4.1"
+pytest = "^7.4.0"
+pydantic = "1.*"
+httpx = "^0.24.1"
+lxml = "^4.9.3"
+lxml-stubs = "^0.4.0"
+tqdm = "^4.66.1"
+my-poetry-package = {path = "extras/modules_and_packages/my_poetry_package", develop = true}
+requests = "^2.31.0"
+sqlalchemy = "^2.0.23"
+flask = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
